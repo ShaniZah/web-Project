@@ -1,0 +1,91 @@
+/* students: Shani Zahavi 211305271, Leon Petrov 314821521 */
+/*page link:  https://shanizah.github.io/MitziNet_registraition_form/ */
+html,
+body {
+  font-family: Verdana, sans-serif;
+  background-color: antiquewhite;
+  text-align: center;
+  margin: 2%;
+}
+.pageTop {
+  width: auto;
+  border: 5px solid #dac0a3;
+}
+h1 {
+  color: #3c5b6f;
+}
+p {
+  font-size: medium;
+  color: #3c5b6f;
+  margin-bottom: 3%;
+}
+.container {
+  background-color: rgb(224, 202, 175);
+  box-shadow: 0 0 10px rgb(224, 202, 175);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+.nameContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+input {
+  width: 80%;
+  margin: 1%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px; /*round edges*/
+}
+input:hover {
+  border-color: orange;
+}
+#firstName,#lastName{
+  margin: 10px;
+  width: 60%;
+}
+button {
+  font-family: Verdana, sans-serif;
+  color: #3c5b6f;
+  width: 120px;
+  margin-top: 20px;
+  padding: 4px;
+  border-radius: 4px; /*round edges*/
+  border: 2px solid #ccc;
+}
+button:hover {
+  background-color: #bed7dc;
+}
+#submitionStatus {
+  margin: 0%;
+  font-size: small;
+}
+#successfulSubmit {
+  font-size: large;
+  color: green;
+}
+
+/*responsive web page settings*/
+@media (max-width: 600px) {
+  .container{
+    grid-template-columns: 1fr;
+    margin: auto;
+    box-sizing: border-box;
+    grid-gap: 10px;
+    padding: 5px;
+  }
+  .nameContainer{
+    grid-template-columns: 1fr; /*make columns stacked of top of each other*/
+  }
+  .containerForm {
+    width: 100%;
+    padding: 5px;
+  }
+  #firstName,#lastName{
+    margin: 10px;
+    width: 80%;
+  }
+}

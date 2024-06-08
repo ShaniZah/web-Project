@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('password_2').addEventListener('blur', checkPassword);
 });
 
+// check if field is empty and change border color accordingly
 function checkField(event) {
   if (event.target.value === "") {
     event.target.style.borderColor = "red";
